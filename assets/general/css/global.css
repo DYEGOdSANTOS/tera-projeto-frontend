@@ -1,0 +1,23 @@
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main>div>.curso {
+    display: inline-flex;
+    border: solid 4px transparent;
+    border-radius: 0.8rem;
+    border-image: linear-gradient(45deg, #4d5bf9, rgb(255, 123, 0)) 1;
+    background-clip: padding-box;
+    border-radius: 8px;
+    max-height: 30vh;
+    min-height: 30vh;
+    max-width: 25vw;
+    min-width: 25vw;
+    margin: 5px;
+    padding: 5px;
+}
+
+#main>div {
+    text-align: center;
+}

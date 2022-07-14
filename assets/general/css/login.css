@@ -1,0 +1,13 @@
+#main #login {
+    transform: translateX(50vw) translateX(-70px) translateX(-50%) translateY(30vh);
+}
+
+#main #login>div {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+button {
+    padding-left: 5px;
+    padding-right: 5px;
+}
