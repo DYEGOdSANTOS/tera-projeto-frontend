@@ -10,8 +10,8 @@
     border-image: linear-gradient(45deg, #4d5bf9, rgb(255, 123, 0)) 1;
     background-clip: padding-box;
     border-radius: 8px;
-    max-height: 30vh;
-    min-height: 30vh;
+    max-height: 28vh;
+    min-height: 28vh;
     max-width: 25vw;
     min-width: 25vw;
     margin: 5px;
@@ -22,17 +22,16 @@
     text-align: center;
 }
 
-
 .curso:nth-child(3n+1)>div {
-    background-image: url('../../../media//fullstackmaster.jpg');
+    background-image: url('../../../media/Spring-boot.jpg');
 }
 
 .curso:nth-child(3n+2)>div {
-    background-image: url('../../../media//fullstacktera.jpg');
+    background-image: url('../../../media/fullstacktera.jpg');
 }
 
 .curso:nth-child(3n+3)>div {
-    background-image: url('../../../media//cursonode.jpg') !important;
+    background-image: url('../../../media/cursonode.jpg') !important;
 }
 
 .curso>div {
@@ -43,7 +42,6 @@
     padding: 0;
     margin: 0;
 }
-
 
 .matricule-se {
     color: white;
@@ -85,4 +83,43 @@
 .views .text {
     display: inline-block;
     vertical-align: middle;
+}
+
+#search-bar {
+    display: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#search-bar>ion-item {
+    display: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#search-bar #pesquisar {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#search-bar #pesquisar:focus {
+    outline: none
+}
+
+#search-bar button {
+    width: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+#search-bar button:hover {
+    background-color: #ccc;
+    border: 1px solid white;
 }

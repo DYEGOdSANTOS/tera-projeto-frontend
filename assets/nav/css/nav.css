@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +23,7 @@ body {
     background: #4d5bf9;
     transition: width 0.5s;
     overflow: hidden;
+    margin-bottom: 5vh;
 }
 
 .navigation.active {
@@ -166,7 +166,7 @@ body {
     display: none;
 }
 
-.navigation.navigation~#main {
+.navigation~#main {
     padding-top: 20px;
     background-color: #fff;
     width: auto;
@@ -179,7 +179,7 @@ body {
     /*padding-right: 90px;*/
 }
 
-.navigation.navigation.active~#main {
+.navigation.active~#main {
     padding-left: 250px;
     transition: padding-left 0.5s;
 }
