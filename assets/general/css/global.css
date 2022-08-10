@@ -22,6 +22,7 @@
     text-align: center;
 }
 
+/*
 .curso:nth-child(3n+1)>div {
     background-image: url('../../../media/Spring-boot.jpg');
 }
@@ -33,6 +34,7 @@
 .curso:nth-child(3n+3)>div {
     background-image: url('../../../media/cursonode.jpg') !important;
 }
+*/
 
 .curso>div {
     position: relative;
