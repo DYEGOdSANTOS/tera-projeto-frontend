@@ -23,7 +23,7 @@
                     </a>
                     <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item">
-                            <a href="../templates/cursooff.html" class="nav-link px-sm-0 px-2">
+                            <a href="#" class="nav-link px-sm-0 px-2">
                                 <i class="text-info fs-5 bi bi-globe me-2"></i><span class="ms-1 d-none d-sm-inline">Cursos</span>
                             </a>
                         </li>
@@ -37,29 +37,16 @@
                 </div>
             </div>  <!-- end menu -->
             <div class="col d-flex flex-column h-sm-100">  <!-- start content -->                
-                <main class="row pb-4 my-auto"> <!-- start main -->      
+                <main class="row pb-4"> <!-- start main -->      
                     <div class="col-12 col-md-6 col-lg-4 pt-3 mx-auto">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="text-center py-3">LOGIN</h4>
-                                <form onsubmit="return false;">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="span-usuario">Usuário</span>
-                                        <input id="username" type="text" class="form-control" placeholder="" aria-label="Usuário" aria-describedby="span-usuario">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="span-senha">&nbsp;Senha&nbsp;</span>
-                                        <input id="password" type="password" class="form-control" placeholder="" aria-label="Senha" aria-describedby="span-senha">
-                                    </div>
-                                    <div id="login-error">                                        
-                                    </div>
-                                    <div class="text-end">
-                                        <button id="btn-login" class="btn btn-success">Entrar</button>
-                                    </div>
-                                </form>
+                        <form onsubmit="return false;">
+                            <div class="input-group">
+                                <input id="pesquisar" type="text" class="form-control" placeholder="Pesquisar" aria-label="Caixa de busca">
+                                <button id="btn-pesquisar" class="input-group-text"><i class="bi bi-search"></i></button>
                             </div>
-                        </div>                        
-                    </div>                                    
+                        </form>
+                    </div>
+                    <div id="content" class="row overflow-auto mx-auto"></div>                                     
                 </main> <!-- end main -->
                 <footer class="row bg-dark text-light py-2 mt-auto text-center">  <!-- start footer -->
                     <div class="col">
@@ -71,6 +58,6 @@
     </div>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="../assets/general/js/login.js"></script>
+    <script src="../assets/general/js/cursos.js"></script>
 </body>
 </html>
