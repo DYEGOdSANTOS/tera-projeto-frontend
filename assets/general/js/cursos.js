@@ -13,7 +13,7 @@ function buscarCursos() {
                             `
             });
             html += `
-                    <div class="col-12 col-md-6 col-xl-4 pt-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="card h-100">
                             <img src="${element.image}" class="card-img-top" alt="...">
                             <div class="card-body">
