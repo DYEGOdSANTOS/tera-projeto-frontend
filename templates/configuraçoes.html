@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Codeply" />
+    <title>Plataforma de Ensino X Cursos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/general/css/base.css" />
+  <style>body{color: #000;overflow-x: hidden;height: 100%;background-image: url("https://i.imgur.com/GMmCQHC.png");background-repeat: no-repeat;background-size: 100% 100%}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0 } </style>
+</head>
+<body >
+    <div class="container-fluid overflow-hidden">
+        <div class="row vh-100 overflow-auto">
+            <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">  <!-- stat menu -->
+                <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <a href="#" class="d-flex align-items-center pb-sm-3 pt-sm-3 mb-md-0 mx-auto text-white text-decoration-none">
+                        <span class="fs-3"><span class="d-flex d-sm-none">LOGO.PNG</span><span class="d-none d-sm-inline ps-2">X Cursos</span></span>
+                    </a>
+                    <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="/tera-projeto-frontend/templates/cursoapresentacao.html" class="nav-link px-sm-0 px-2">
+                                <i class="text-info fs-5 bi bi-globe me-2"></i><span class="ms-1 d-none d-sm-inline">Cursos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
+                            <i class="text-primary fs-5 bi bi-mortarboard-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Meus Cursos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="text-warning fs-5 bi bi-star-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Favoritos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="text-success fs-5 bi bi-chat-dots-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Mensagens</span></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/lyazmat.png" alt="Foto do Usuário" width="28" height="28" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1 ms-2">Usuário</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <li><a class="dropdown-item" href="../templates/perfil.html">Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                              
+            </div>  <!-- end menu -->
+            <div class="col d-flex flex-column h-sm-100">  <!-- start content -->
+                <main class="row pb-4"> <!-- start main -->                           
+                    <div class="container-fluid px-1 py-5 mx-auto">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                                
+                                <p class="blue-text">Plataforma de Ensino X Cursos<br> </p>
+                                <div class="card">
+                          <img src="/tera-projeto-frontend/media/gear_icon_160076 (1).png" style="width:50px ;" alt="">
+                                    <form class="form-card" onsubmit="event.preventDefault()">
+                                        <h3>Alteração De dados Cadastrais</h3>
+                                        <div class="row justify-content-between text-left">
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nome<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Nome" onblur="validate(1)"> </div>
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Sobrenome<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Digite Seu Sobrenome" onblur="validate(2)"> </div>
+                                        </div>
+
+                                           <div class="row justify-content-between text-left">
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">E-mail<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="E-mail" onblur="validate(1)"> </div>
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Telefone<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Telefone" onblur="validate(2)"> </div>
+                                        </div>
+                                        <div class="row justify-content-between text-left">
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Digite Sua Senha Atual<span class="text-danger"> *</span></label> <input type="password" id="fname" name="fname" placeholder="Senha Atual" onblur="validate(1)"> </div>
+                                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Digite Sua Nova Senha<span class="text-danger"> *</span></label> <input type="password" id="lname" name="lname" placeholder="Nova Senha" onblur="validate(2)"> </div>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="form-group col-sm-6">  
+                                            </div>
+                                            <Button data-toggle="modal" data-target="#meuModal">Salvar</BUtton>                                         
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main> <!-- end main -->
+                <footer class="row bg-dark text-light py-2 mt-auto text-center">  <!-- start footer -->
+                    <div class="col">
+                        Plataforma de Cursos X - Desenvolvendo habilidades desde 2022 
+                    </div>
+                </footer>  <!-- end footer -->
+            </div> <!-- end content -->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+ <!-- Modal -->
+ <div id="meuModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Conteúdo do modal-->
+      <div class="modal-content">
+
+        <!-- Cabeçalho do modal -->
+        <div class="modal-header">
+          <h4 class="modal-title">Alteraçao Cadastral</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Corpo do modal -->
+        <div class="modal-body">
+          <p>Atualizaçao Realizada Com Sucesso !!  </p>
+        </div>
+
+        <!-- Rodapé do modal-->
+        <div class="modal-footer"> 
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          <button type="button"   class="btn btn-primary">Salvar Alterações</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
