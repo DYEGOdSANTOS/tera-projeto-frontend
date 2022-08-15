@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Codeply" />
+    <title>Plataforma de Ensino X Cursos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/general/css/base.css" />
+    <link rel="stylesheet" href="../assets/general/css/configuracoes.css" />
+</head>
+<body >
+    <div class="container-fluid overflow-hidden">
+        <div class="row vh-100 overflow-auto">
+            <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">  <!-- stat menu -->
+                <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <a href="#" class="d-flex align-items-center pb-sm-3 pt-sm-3 mb-md-0 mx-auto text-white text-decoration-none">
+                        <span class="fs-3"><span class="d-flex d-sm-none">LOGO.PNG</span><span class="d-none d-sm-inline ps-2">X Cursos</span></span>
+                    </a>
+                    <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="../templates/cursoin.html" class="nav-link px-sm-0 px-2">
+                                <i class="text-info fs-5 bi bi-globe me-2"></i><span class="ms-1 d-none d-sm-inline">Cursos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
+                            <i class="text-primary fs-5 bi bi-mortarboard-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Meus Cursos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="text-warning fs-5 bi bi-star-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Favoritos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-sm-0 px-2">
+                            <i class="text-success fs-5 bi bi-chat-dots-fill me-2"></i><span class="ms-1 d-none d-sm-inline">Mensagens</span></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/lyazmat.png" alt="Foto do Usuário" width="28" height="28" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1 ms-2">Usuário</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <li><a class="dropdown-item" href="../templates/perfil.html">Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                              
+            </div>  <!-- end menu -->
+            <div class="col d-flex flex-column h-sm-100">  <!-- start content -->
+                <main class="row pb-4"> <!-- start main -->                           
+                    <div class="container-fluid py-5 mx-auto h-100">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-11 col-md-9 col-lg-8 col-xl-7 text-center">
+                                <div class="card p-4">
+                                    <div class="d-flex mx-auto">
+                                        <i class="bi bi-gear fs-1"></i><span class="fs-2 ms-3 align-self-center">Configurações</span>
+                                    </div>
+                                    <div class="card p-3 my-3">
+                                        <form class="form-card" onsubmit="event.preventDefault()">
+                                            <div class="d-flex mb-3">
+                                                <i class="bi bi-envelope fs-3"></i><span class="fs-5 ms-2 align-self-center">Acesso - Email</span>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-email"></i>Email Atual</span>
+                                                <input id="email" type="email" class="form-control" placeholder="Email Atual" aria-label="Email Atual" aria-describedby="span-email" readonly>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-novo-email"></i>Novo Email</span>
+                                                <input id="novo-email" type="email" class="form-control" placeholder="Novo Email" aria-label="Novo Email" aria-describedby="span-novo-email">
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-confirma-email"></i>&nbsp;&nbsp;Confirmar</span>
+                                                <input id="confirma-email" type="email" class="form-control" placeholder="Confirmar Email" aria-label="Confirmar Email" aria-describedby="span-confirma-email">
+                                            </div>
+                                            <button id="btn-alterar-email" class="btn btn-primary mx-3 float-end mb-3">Alterar e-mail</button>
+                                        </form>
+                                    </div>
+                                    <div class="card p-3 my-3">
+                                        <form class="form-card" onsubmit="event.preventDefault()">
+                                            <div class="d-flex mb-3">
+                                                <i class="bi bi-phone fs-3"></i><span class="fs-5 ms-2 align-self-center">Acesso - Celular</span>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-numero"></i>Número Atual</span>
+                                                <input id="numero" type="text" class="form-control" placeholder="Número Atual" aria-label="Username" aria-describedby="span-numero" readonly>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-novo-numero"></i>Novo Número</span>
+                                                <input id="novo-numero" type="text" class="form-control" placeholder="Novo Número" aria-label="Username" aria-describedby="span-novo-numero">
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-confirma-numero1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirmar</span>
+                                                <input id="confirma-numero" type="text" class="form-control" placeholder="Confirmar Número" aria-label="Username" aria-describedby="span-confirma-numero">
+                                            </div>
+                                            <button id="btn-alterar-numero" class="btn btn-primary mx-3 float-end mb-3">Alterar número</button>
+                                        </form>
+                                    </div>
+                                    <div class="card p-3 my-3">
+                                        <form class="form-card" onsubmit="event.preventDefault()">
+                                            <div class="d-flex mb-3">
+                                                <i class="bi bi-shield-lock fs-3"></i><span class="fs-5 ms-2 align-self-center">Segurança</span>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-senha"></i>Senha Atual</span>
+                                                <input id="senha" type="password" class="form-control" placeholder="Senha Atual" aria-label="Username" aria-describedby="span-senha">
+                                                <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#senha"><i class="bi bi-eye-fill"></i></button></span>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-nova-senha"></i>Nova Senha</span>
+                                                <input id="nova-senha" type="password" class="form-control" placeholder="Nova Senha" aria-label="Username" aria-describedby="span-nova-senha">
+                                                <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#nova-senha"><i class="bi bi-eye-fill"></i></button></span>
+                                            </div>
+                                            <div class="input-group mb-3 px-3">
+                                                <span class="input-group-text" id="span-confima-senha"></i>&nbsp;&nbsp;&nbsp;Confirmar</span>
+                                                <input id="confima-senha" type="password" class="form-control" placeholder="Confirmar Senha" aria-label="Username" aria-describedby="span-confima-senha">
+                                                <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#confima-senha"><i class="bi bi-eye-fill"></i></button></span>
+                                            </div>
+                                            <button id="btn-alterar-senha" class="btn btn-primary mx-3 float-end mb-3">Alterar senha</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Launch static backdrop modal
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Confirmação de Alteração</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </main> <!-- end main -->
+                <footer class="row bg-dark text-light py-2 mt-auto text-center">  <!-- start footer -->
+                    <div class="col">
+                        Plataforma de Cursos X - Desenvolvendo habilidades desde 2022 
+                    </div>
+                </footer>  <!-- end footer -->
+            </div> <!-- end content -->
+        </div>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../assets/general/js/configuracoes.js"></script>
+</body>
+</html>
