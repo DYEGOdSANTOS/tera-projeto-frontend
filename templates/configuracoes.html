@@ -81,7 +81,7 @@
                                                 <span class="input-group-text" id="span-confirma-email"></i>&nbsp;&nbsp;Confirmar</span>
                                                 <input id="confirma-email" type="email" class="form-control" placeholder="Confirmar Email" aria-label="Confirmar Email" aria-describedby="span-confirma-email">
                                             </div>
-                                            <button id="btn-alterar-email" class="btn btn-primary mx-3 float-end mb-3">Alterar e-mail</button>
+                                            <button id="btn-alterar-email" data="email" class="btn-confirm btn btn-primary mx-3 float-end mb-3">Alterar e-mail</button>
                                         </form>
                                     </div>
                                     <div class="card p-3 my-3">
@@ -101,7 +101,7 @@
                                                 <span class="input-group-text" id="span-confirma-numero1"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirmar</span>
                                                 <input id="confirma-numero" type="text" class="form-control" placeholder="Confirmar Número" aria-label="Username" aria-describedby="span-confirma-numero">
                                             </div>
-                                            <button id="btn-alterar-numero" class="btn btn-primary mx-3 float-end mb-3">Alterar número</button>
+                                            <button id="btn-alterar-numero" data="numero" class="btn-confirm btn btn-primary mx-3 float-end mb-3">Alterar número</button>
                                         </form>
                                     </div>
                                     <div class="card p-3 my-3">
@@ -110,51 +110,66 @@
                                                 <i class="bi bi-shield-lock fs-3"></i><span class="fs-5 ms-2 align-self-center">Segurança</span>
                                             </div>
                                             <div class="input-group mb-3 px-3">
-                                                <span class="input-group-text" id="span-senha"></i>Senha Atual</span>
+                                                <span class="d-none d-sm-inline-block input-group-text" id="span-senha"></i>Senha Atual</span>
                                                 <input id="senha" type="password" class="form-control" placeholder="Senha Atual" aria-label="Username" aria-describedby="span-senha">
                                                 <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#senha"><i class="bi bi-eye-fill"></i></button></span>
                                             </div>
                                             <div class="input-group mb-3 px-3">
-                                                <span class="input-group-text" id="span-nova-senha"></i>Nova Senha</span>
+                                                <span class="d-none d-sm-inline-block input-group-text" id="span-nova-senha"></i>Nova Senha</span>
                                                 <input id="nova-senha" type="password" class="form-control" placeholder="Nova Senha" aria-label="Username" aria-describedby="span-nova-senha">
                                                 <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#nova-senha"><i class="bi bi-eye-fill"></i></button></span>
                                             </div>
                                             <div class="input-group mb-3 px-3">
-                                                <span class="input-group-text" id="span-confima-senha"></i>&nbsp;&nbsp;&nbsp;Confirmar</span>
+                                                <span class="d-none d-sm-inline-block input-group-text" id="span-confima-senha"></i>&nbsp;&nbsp;&nbsp;Confirmar</span>
                                                 <input id="confima-senha" type="password" class="form-control" placeholder="Confirmar Senha" aria-label="Username" aria-describedby="span-confima-senha">
                                                 <span class="input-group-text"><button class="btn btn-sm border-0 btn-view" data="password" data-target="#confima-senha"><i class="bi bi-eye-fill"></i></button></span>
                                             </div>
-                                            <button id="btn-alterar-senha" class="btn btn-primary mx-3 float-end mb-3">Alterar senha</button>
+                                            <button id="btn-alterar-senha" data="senha" class="btn-confirm btn btn-primary mx-3 float-end mb-3">Alterar senha</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        Launch static backdrop modal
-                    </button>
                     
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <!-- Modal Configurações -->
+                    <div class="modal fade" id="modal-configuracoes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="backdrop-configuracoes" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Confirmação de Alteração</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
-                            </div>
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="backdrop-configuracoes">Confirmação de Alteração de <span id="element-name"></span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="element-content" class="text-center my-auto"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    <button id="btn-save" type="button" class="btn btn-success">Salvar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal End -->
+
+                    <!-- Modal Safe -->
+                    <div class="modal fade" id="modal-safe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="backdrop-safe" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="backdrop-safe">Confirmação de Alteração de <span id="safe-name"></span></h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center my-auto text-success"><b>Salvo com sucesso!</b></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal End -->
                 
                 </main> <!-- end main -->
                 <footer class="row bg-dark text-light py-2 mt-auto text-center">  <!-- start footer -->
