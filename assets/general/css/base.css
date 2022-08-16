@@ -8,12 +8,13 @@
     }
 }
 
-.nav-link span, .nav-link i {
+.nav-link span,
+.nav-link i {
     color: white;
 }
 
-@media (max-width: 575px){
+@media (max-width: 575px) {
     .sticky-top {
         max-height: 10vh;
     }
-}  
+}
